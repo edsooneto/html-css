@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*  Temos que importar a fonte para que ela funcione
+    Pegar no google fonts
+*/
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*  É muito importante colocarmos os 2 pontos para indicar em qual pasta está a fonte que baixamos
+    
+    src: url('../fontes/idroid.otf') format('opentype');
+*/
+
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -8,7 +25,59 @@
     --cor4: #1a5c37;
     --cor5: #063d1e;
 
-    --fonte0: Arial, Helvetica, sans-serif;
-    --fonte1: 'Bebas Neue', sans-serif;
-    --fonte2: 'Android', sans-serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*  Variáveis em CSS utilizando root
+
+    Para criarmos variáveis para nossas configurações, devemos definir uma área de definições dentro do seu estilo para uma pseudo-classe chamada :root, que definem as configurações para a raiz de uma árvore, que vai servir para o documento inteiro.
+
+    A partir de agora, definir cores e fontes em nossos elementos HTML ficará extremamente mais fácil e personalizável, utilizando a função var(). 
+*/
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-color: var(--cor4);
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+}
+
+header > p {
+    color: white;
+}
+
+nav {
+    background-color: var(--cor5);
+}
+
+main {
+    background-color: white;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
 }
