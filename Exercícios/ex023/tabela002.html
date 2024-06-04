@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -30,6 +31,12 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         tbody > tr:nth-child(even) { /* 2n-1 */
@@ -123,5 +130,6 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, modi? Excepturi ullam, eum alias possimus consectetur dolorum, corporis temporibus unde quasi autem ipsa natus laboriosam cum laborum assumenda odit eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni esse voluptas vero fugit odio consectetur provident accusamus molestiae recusandae, iste sed tenetur. Doloribus rerum molestiae asperiores repudiandae esse possimus sequi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, dolor ratione. Eligendi eaque exercitationem totam? Voluptates vel quaerat cupiditate quia magni minima, quas blanditiis impedit eum, ipsum, numquam sit quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia aliquid, totam illum at praesentium ducimus alias explicabo eveniet autem accusantium, similique maiores perferendis, officia voluptates cum libero recusandae tempore possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae repudiandae quam minus voluptatem autem, doloribus atque commodi voluptatum! Consequatur optio nihil doloremque hic exercitationem itaque quas provident sit nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo esse eum, accusantium voluptatibus consequatur vero consectetur quasi blanditiis doloremque iste vitae necessitatibus velit tempora! Assumenda sed ipsa aut distinctio asperiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil perspiciatis nobis illum voluptatem harum consectetur veniam expedita aperiam culpa cupiditate. Similique tempore iste animi porro, voluptatum possimus quos repudiandae autem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente suscipit, quo soluta facilis voluptatem, ducimus harum rerum quae, fugiat labore odio est nesciunt veniam veritatis iste cumque dicta? Incidunt, recusandae?</p>
 </body>
 </html>
