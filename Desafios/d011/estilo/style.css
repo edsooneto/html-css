@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-color: gray;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section.container {
+    background-color: purple;
+    background-image: url('../imagens/espaco.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+article.conteudo {
+    background-image: url('../imagens/astronauta.png');
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
